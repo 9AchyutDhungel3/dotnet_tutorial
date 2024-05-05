@@ -1,5 +1,7 @@
 //By default class are internal ( can be used within a project.)
 // If you want to use it outside a project use public.
+using EnumsAndProperties;
+
 class AccessModifier
 {
     // By default methods are private.

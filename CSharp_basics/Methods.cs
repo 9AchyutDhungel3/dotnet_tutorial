@@ -2,7 +2,7 @@ using EnumsAndProperties;
 
 public class MethodLearn
 {
-    static void Main()
+    static void Main2()
     {
         MethodLearn methodLearn = new MethodLearn();
         // double sum = methodLearn.Sum(2.3,3.2);
