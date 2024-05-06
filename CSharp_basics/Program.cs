@@ -12,10 +12,22 @@ public class Program
 
         // Console.WriteLine($"Area:- {x}");
 
-        var rectangle = new Rectangle(25,25);
-        rectangle.PrintResult();
+        // var rectangle = new Rectangle(25,25);
+        // rectangle.PrintResult();
         
+        // var file = new FileIO();
+        // file.LearnFileReading();
         
+        // var file = new FileIO();
+        // file.LearnFileWriting();
+
+        // var file = new FileIO();
+        // file.LearnFileInfo();
+
+        var folder = new FileIO();
+        folder.LearnDirectory();
+
+                
     }
     
 }
