@@ -15,25 +15,40 @@ public abstract class Shape
     public abstract double GetArea(); //
 
     public abstract double GetPerimeter();
+    
+    public virtual void PrintResult()
+    {
+        Console.WriteLine("Printing result for some shape...");
+    }
 }
 
 public class Rectangle : Shape
 {
     public double Length { get; set; }
     public double Breadth { get; set; }
+
+    // Constructor
+    public Rectangle(double length, double breadth) 
+    {
+        Length = length;
+        Breadth = breadth;
+    }
     public override double GetArea() => Length * Breadth;
 
     public override double GetPerimeter() => 2 * (Length + Breadth);
+
+    public override void PrintResult()
+    {
+        Console.WriteLine($"Printing result for rectangle [{Length}X{Breadth}]");
+        Console.WriteLine($"Area: {this.GetArea()}");
+        Console.WriteLine($"Perimeter: {this.GetPerimeter()}");
+    }
 }
 
 public class Square : Rectangle
 {
-    public Square(double side)
-    {
-        base.Breadth = side;
-        base.Length = side;
-
-    }
+    public Square(double side) : base(side, side) // calls the base constructor
+    {}
 }
 
 
