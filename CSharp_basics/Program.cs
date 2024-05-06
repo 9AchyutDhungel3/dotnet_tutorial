@@ -24,9 +24,12 @@ public class Program
         // var file = new FileIO();
         // file.LearnFileInfo();
 
-        var folder = new FileIO();
-        folder.LearnDirectory();
+        // var folder = new FileIO();
+        // folder.LearnDirectory();
 
+        // Homework:
+        var folder = new FileIO();
+        folder.HomeWork();
                 
     }
     

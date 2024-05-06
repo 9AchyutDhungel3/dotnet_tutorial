@@ -48,8 +48,31 @@ public class FileIO
 
     public void LearnDirectory()
     {
-        string folderPath = "createdFolder";    
+        string folderPath = "createdFolder";
         Directory.CreateDirectory(folderPath);
         Directory.Delete(folderPath);
+    }
+
+    // HW: Create a folder "Nepal", with in that create 10 sub folders. Every subfolders should contain a file Test.txt with subfolder name as content.
+    public void HomeWork()
+    {
+        // Create root directory.
+        string rootFolderPath = "Nepal";
+        Directory.CreateDirectory(rootFolderPath);
+
+        // 1. Create 10 new sub-directory
+        // 2. Inside each sub-directory create a text file.
+        // 3. Inside each of the text file add the content as the sub-directory name.
+        for (int i = 0; i < 10; i++)
+        {
+            // Create a new sub-directory.
+            string subFolderName = "subFolder" + i;
+            string subFolderPath = rootFolderPath + @"\" + subFolderName;
+            Directory.CreateDirectory(subFolderPath); // Created sub-directory with the given name and path.
+
+            // Create text file and add the sub-folder name as it's content.
+            string fileName = "Test.txt";
+            File.WriteAllText(path: subFolderPath + @"\" + fileName, contents: subFolderName);
+        }
     }
 }
