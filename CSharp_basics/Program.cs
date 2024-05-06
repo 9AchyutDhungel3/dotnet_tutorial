@@ -7,6 +7,8 @@ public class Program
         // Collection collections = new Collection();
         // collections.LearnDict();
 
+        // Inheritance : ------------------------------------------
+
         // var square = new Square(55.5);
         // var x = square.GetArea();
 
@@ -14,6 +16,10 @@ public class Program
 
         // var rectangle = new Rectangle(25,25);
         // rectangle.PrintResult();
+
+        //----------------------------------------------------------
+        
+        // File handling : -----------------------------------------
         
         // var file = new FileIO();
         // file.LearnFileReading();
@@ -28,8 +34,10 @@ public class Program
         // folder.LearnDirectory();
 
         // Homework:
-        var folder = new FileIO();
-        folder.HomeWork();
+        // var folder = new FileIO();
+        // folder.HomeWork();
+
+        //-----------------------------------------------------------
                 
     }
     
