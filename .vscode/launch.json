@@ -1,0 +1,69 @@
+{
+  "configurations": [
+    {
+      "name": ".NET Core Launch (console)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "console": "internalConsole"
+    },
+    {
+      "name": ".NET Core Launch (console)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "console": "internalConsole",
+      "pipeTransport": {
+        "pipeCwd": "${workspaceFolder}",
+        "pipeProgram": "enter the fully qualified path for the pipe program name, for example '/usr/bin/ssh'",
+        "pipeArgs": [],
+        "debuggerPath": "enter the path for the debugger on the target machine, for example ~/vsdbg/vsdbg"
+      }
+    },
+    {
+      "name": "C#: Csharp_basics",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}\\CSharp_basics\\Csharp_basics.csproj",
+      "launchConfigurationId": "TargetFramework=;C,sharp_basics"
+    },
+    {
+      "name": "LINQ",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/LINQ/bin/Debug/net8.0/LINQ.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/LINQ",
+      "stopAtEntry": false,
+      "console": "internalConsole"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/ASUS TUF/OneDrive/Desktop/NetCentric/dotnet_tutorial/LINQ",
+      "program": "c:/Users/ASUS TUF/OneDrive/Desktop/NetCentric/dotnet_tutorial/LINQ/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

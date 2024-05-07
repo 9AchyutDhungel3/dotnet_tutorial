@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "msbuild",
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build",
+			"label": "Build: Csharp_basics.csproj",
+			"detail": "Build the Csharp_basics.csproj project using dotnet build"
+		},
+		{
+			"type": "dotnet",
+			"task": "build c:\\Users\\ASUS TUF\\OneDrive\\Desktop\\NetCentric\\dotnet_tutorial\\LINQ\\LINQ.csproj",
+			"file": "c:\\Users\\ASUS TUF\\OneDrive\\Desktop\\NetCentric\\dotnet_tutorial\\LINQ\\LINQ.csproj",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "dotnet: build c:\\Users\\ASUS TUF\\OneDrive\\Desktop\\NetCentric\\dotnet_tutorial\\LINQ\\LINQ.csproj"
+		}
+	]
+}
